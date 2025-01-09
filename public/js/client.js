@@ -44,3 +44,8 @@ function setClientState(state, code = "") {
     }, 4100);
   }
   
+  function vibratePhone(timeMs) {
+    if (navigator.vibrate) {
+      navigator.vibrate(timeMs);
+    }
+  }

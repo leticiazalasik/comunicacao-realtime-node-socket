@@ -3,10 +3,10 @@ let socket;
 function connectWebSocket(){
     socket = new WebSocket(WS_URL);
 
-    socket.addEventListener("open", handleSocket);
-    socket.addEventListener("message", handleSocket);
-    socket.addEventListener("error", handleSocket);
-    socket.addEventListener("close", handleSocket);
+    socket.addEventListener("open", handleSocketOpen);
+    socket.addEventListener("message", handleSocketMessage);
+    socket.addEventListener("error", handleSocketError);
+    socket.addEventListener("close", handleSocketClose);
 }
 
 function handleSocketOpen(){
@@ -28,10 +28,10 @@ function handleSocketError(error){
 
 function handleSocketClose(){
     console.log("Websocket fechado.Tentando reconectar em 5 segundos...")
-    setTimeout(connectWebSocket(), 5000);
+setTimeout(connectWebSocket, 5000);
 }
 
-function updateClientCount(){
+function updateClientCount(count){
     document.getElementById("clientCount").innerText= count;
 }
 
