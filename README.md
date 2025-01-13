@@ -13,4 +13,4 @@ Vscode - HTML, CSS, JavaScript, Node, Socket.io
 
 
 
-Tutorial base: [https://www.youtube.com/watch?v=-jXfKDYJJvo](https://www.youtube.com/watch?v=pb4ggtC1Mh8)
+Tutorial base: [https://www.youtube.com/watch?v=-jXfKDYJJvo](https://www.youtube.com/watch?v=pb4ggtC1Mh8) .
